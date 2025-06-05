@@ -14,7 +14,7 @@
                 </div>
             <?php endif; ?>
 
-            <form id="quoteForm" method="GET" target="downloadFrame" action="<?= base_url('quote-report/download') ?>">
+            <form id="quoteForm" method="GET" action="<?= base_url('quote-report/download') ?>">
                 <div class="mb-3 row">
                     <div class="col-md-6">
                         <label for="from_date" class="form-label">From Date</label>
