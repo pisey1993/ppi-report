@@ -14,7 +14,7 @@
                 </div>
             <?php endif; ?>
 
-            <form id="reportForm" method="GET" action="<?= base_url('renewalreport/download') ?>">
+            <form id="reportForm" method="GET" action="<?= base_url('renewalreport/download') ?>" target="downloadFrame">
                 <div class="mb-3 row">
                     <div class="col-md-6">
                         <label for="from_date" class="form-label">From Date</label>
