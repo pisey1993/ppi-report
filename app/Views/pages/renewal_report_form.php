@@ -45,45 +45,45 @@
 
         </div>
         <!-- Progress Bar -->
-<!--        <div id="progressBarWrapper" class="mt-4" style="display: none;">-->
-<!--            <div class="progress">-->
-<!--                <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-info"-->
-<!--                     role="progressbar" style="width: 100%">-->
-<!--                    Generating report...-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div id="progressBarWrapper" class="mt-4" style="display: none;">
+            <div class="progress">
+                <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                     role="progressbar" style="width: 100%">
+                    Generating report...
+                </div>
+            </div>
+        </div>
 
         <!-- Success Message -->
-<!--        <div id="successMessage" class="alert alert-success mt-4 text-center" style="display: none;">-->
-<!--            ✅ Report has been downloaded successfully.-->
-<!--        </div>-->
+        <div id="successMessage" class="alert alert-success mt-4 text-center" style="display: none;">
+            ✅ Report has been downloaded successfully.
+        </div>
 
         <!-- Hidden iframe to handle download -->
-<!--        <iframe id="downloadFrame" name="downloadFrame" style="display: none;"></iframe>-->
+        <iframe id="downloadFrame" name="downloadFrame" style="display: none;"></iframe>
     </div>
 </div>
-<!--<script>-->
-<!--    const form = document.getElementById('reportForm');-->
-<!--    const progressBar = document.getElementById('progressBarWrapper');-->
-<!--    const successMessage = document.getElementById('successMessage');-->
-<!---->
-<!--    form.addEventListener('submit', function () {-->
-<!--        // Show progress bar and hide success message-->
-<!--        progressBar.style.display = 'block';-->
-<!--        successMessage.style.display = 'none';-->
-<!---->
-<!--        // Simulate processing delay (adjust to your actual processing time)-->
-<!--        setTimeout(() => {-->
-<!--            progressBar.style.display = 'none';-->
-<!--            successMessage.style.display = 'block';-->
-<!---->
-<!--            // Auto-hide success message after 5 seconds (optional)-->
-<!--            setTimeout(() => {-->
-<!--                successMessage.style.display = 'none';-->
-<!--            }, 5000);-->
-<!---->
-<!--        }, 3000); // Adjust this duration as needed-->
-<!--    });-->
-<!--</script>-->
+<script>
+    const form = document.getElementById('reportForm');
+    const progressBar = document.getElementById('progressBarWrapper');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function () {
+        // Show progress bar and hide success message
+        progressBar.style.display = 'block';
+        successMessage.style.display = 'none';
+
+        // Simulate processing delay (adjust to your actual processing time)
+        setTimeout(() => {
+            progressBar.style.display = 'none';
+            successMessage.style.display = 'block';
+
+            // Auto-hide success message after 5 seconds (optional)
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+
+        }, 3000); // Adjust this duration as needed
+    });
+</script>
 <?= $this->endSection() ?>

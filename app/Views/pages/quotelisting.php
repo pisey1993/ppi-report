@@ -34,46 +34,46 @@
             </form>
 
             <!-- Progress Bar -->
-<!--            <div id="progressBarWrapper" class="mt-4" style="display: none;">-->
-<!--                <div class="progress">-->
-<!--                    <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-info"-->
-<!--                         role="progressbar" style="width: 100%">-->
-<!--                        Generating report...-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div id="progressBarWrapper" class="mt-4" style="display: none;">
+                <div class="progress">
+                    <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                         role="progressbar" style="width: 100%">
+                        Generating report...
+                    </div>
+                </div>
+            </div>
 
             <!-- Success Message -->
-<!--            <div id="successMessage" class="alert alert-success mt-4 text-center" style="display: none;">-->
-<!--                ✅ Report has been downloaded successfully.-->
-<!--            </div>-->
+            <div id="successMessage" class="alert alert-success mt-4 text-center" style="display: none;">
+                ✅ Report has been downloaded successfully.
+            </div>
 
             <!-- Hidden iframe for download -->
-<!--            <iframe id="downloadFrame" name="downloadFrame" style="display: none;"></iframe>-->
+            <iframe id="downloadFrame" name="downloadFrame" style="display: none;"></iframe>
         </div>
     </div>
 </div>
 
 <!-- JavaScript to show progress and success -->
-<!--<script>-->
-<!--    const form = document.getElementById('quoteForm');-->
-<!--    const progressBar = document.getElementById('progressBarWrapper');-->
-<!--    const successMessage = document.getElementById('successMessage');-->
-<!---->
-<!--    form.addEventListener('submit', function () {-->
-<!--        progressBar.style.display = 'block';-->
-<!--        successMessage.style.display = 'none';-->
-<!---->
-<!--        // Simulate processing and download complete-->
-<!--        setTimeout(() => {-->
-<!--            progressBar.style.display = 'none';-->
-<!--            successMessage.style.display = 'block';-->
-<!---->
-<!--            setTimeout(() => {-->
-<!--                successMessage.style.display = 'none';-->
-<!--            }, 5000);-->
-<!--        }, 3000);-->
-<!--    });-->
-<!--</script>-->
+<script>
+    const form = document.getElementById('quoteForm');
+    const progressBar = document.getElementById('progressBarWrapper');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function () {
+        progressBar.style.display = 'block';
+        successMessage.style.display = 'none';
+
+        // Simulate processing and download complete
+        setTimeout(() => {
+            progressBar.style.display = 'none';
+            successMessage.style.display = 'block';
+
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+        }, 3000);
+    });
+</script>
 
 <?= $this->endSection() ?>
