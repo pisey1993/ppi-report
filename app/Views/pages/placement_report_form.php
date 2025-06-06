@@ -8,7 +8,7 @@
                 <div class="card-body p-5">
                     <h3 class="card-title text-center mb-4 text-primary">Download Placement Report</h3>
 
-                    <form id="reportForm" method="POST" action="<?= base_url('placement/download') ?>">
+                    <form id="reportForm" method="POST" target="downloadFrame" action="<?= base_url('placement/download') ?>">
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <label for="from_date" class="form-label">From Date</label>
