@@ -1,7 +1,7 @@
  </main><!-- Close container -->
 
   <footer>
-    &copy; <?= date('Y') ?> Clinic Insured App. All rights reserved.
+    &copy; <?= date('Y') ?> PPI Reporting System.
   </footer>
 
 <script>
